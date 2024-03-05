@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -25,6 +26,7 @@ Route::get('/user/{id}', function ($id) {
     return 'oka ganzz' .$id;
 });
 
+Route::get('/dashboard', [DashboardController::class, 'index']);
 
 
 
